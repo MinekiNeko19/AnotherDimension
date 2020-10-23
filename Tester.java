@@ -9,14 +9,16 @@ public class Tester {
 
     // System.out.print(ArrayOps.largest(B));
     
-    // int[] testC = ArrayOps.sumRows(A);
-    // for (int i = 0; i < testC.length; i++) {
-    //   System.out.println(testC[i]);
+    int[] testC = ArrayOps.sumRows(A);
+    for (int i = 0; i < testC.length; i++) {
+      System.out.println(testC[i]);
+    }
+
+    // int[] testD = ArrayOps.largestInRows(A);
+    // for (int i = 0; i < testD.length; i++) {
+    //   System.out.println(testD[i]);
     // }
 
-    int[] testD = ArrayOps.largestInRows(A);
-    for (int i = 0; i < testD.length; i++) {
-      System.out.println(testD[i]);
-    }
+    System.out.print(ArrayOps.sum(A)); 
   }
 }
