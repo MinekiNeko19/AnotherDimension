@@ -6,6 +6,12 @@ public class Tester {
                };
     int[]  B  =   {  1, 3, 5 };
     // System.out.print(ArrayOps.sum(B));
-    System.out.print(ArrayOps.largest(B));
+
+    // System.out.print(ArrayOps.largest(B));
+    
+    int[] testC = ArrayOps.sumRows(A);
+    for (int i = 0; i < testC.length; i++) {
+      System.out.println(testC[i]);
+    }
   }
 }
