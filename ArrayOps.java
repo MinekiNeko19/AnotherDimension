@@ -32,4 +32,13 @@ public class ArrayOps {
     }
     return bigBois;
   }
+
+  public static int sum(int[][] arr) {
+    int total = 0;
+    int[] rowSums = sumRows(arr);
+    for (int i = 0; i < rowSums.length; i++) {
+      total += rowSums[i];
+    }
+    return total;
+  }
 }
