@@ -24,6 +24,20 @@ public class Tester {
 
     // System.out.print(ArrayOps.sum(A)); 
 
-    System.out.print(Arrays.toString(ArrayOps.sumCols(A)));
+    ////Part 5
+    // System.out.print(Arrays.toString(ArrayOps.sumCols(A)));
+
+    int[][] rowM = { {  2,  1, 3 },
+                      {  1, 2, 3 },
+                      { 3,  2, 1 } };
+    int[][] colM = { {  1,  1, 1 },
+                    {  2, 2, 2 },
+                    { 3,  3, 3 } };
+    int[][] bothM = { {  2,  2, 2 },
+                    {  2, 2, 2 } };
+
+    System.out.print(ArrayOps.isRowMagic(rowM));
+    System.out.print(ArrayOps.isRowMagic(colM));
+    System.out.print(ArrayOps.isRowMagic(bothM));
   }
 }
