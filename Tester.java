@@ -36,8 +36,12 @@ public class Tester {
     int[][] bothM = { {  2,  2, 2 },
                     {  2, 2, 2 } };
 
-    System.out.print(ArrayOps.isRowMagic(rowM));
-    System.out.print(ArrayOps.isRowMagic(colM));
-    System.out.print(ArrayOps.isRowMagic(bothM));
+    // System.out.print(ArrayOps.isRowMagic(rowM));
+    // System.out.print(ArrayOps.isRowMagic(colM));
+    // System.out.print(ArrayOps.isRowMagic(bothM));
+
+    System.out.print(ArrayOps.isColMagic(rowM));
+    System.out.print(ArrayOps.isColMagic(colM));
+    System.out.print(ArrayOps.isColMagic(bothM));
   }
 }
