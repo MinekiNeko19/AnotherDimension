@@ -40,8 +40,14 @@ public class Tester {
     // System.out.print(ArrayOps.isRowMagic(colM));
     // System.out.print(ArrayOps.isRowMagic(bothM));
 
-    System.out.print(ArrayOps.isColMagic(rowM));
-    System.out.print(ArrayOps.isColMagic(colM));
-    System.out.print(ArrayOps.isColMagic(bothM));
+    // System.out.print(ArrayOps.isColMagic(rowM));
+    // System.out.print(ArrayOps.isColMagic(colM));
+    // System.out.print(ArrayOps.isColMagic(bothM));
+
+    int[][]E = { 
+      {  2,  4, 2 }, 
+      {  2, 2, 2 } }; 
+    // System.out.print(ArrayOps.isLocationMagic(E, 0, 1));
+    // System.out.print(ArrayOps.isLocationMagic(E, 1, 1));
   }
 }
