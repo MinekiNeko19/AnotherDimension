@@ -53,6 +53,17 @@ public class ArrayOps {
     return sums;
   }
 
+  public static boolean check(int[] arr) {
+    int check = arr[0];
+    for (int i = 1; i < arr.length; i++) {
+      if (check != arr[i]) {
+        return false;
+      }
+      check = arr[i];
+    }
+    return true;
+  }
+
   public static boolean isRowMagic(int[][] matrix) {
     int[] rowSums = sumRows(matrix);
     int check = rowSums[0];
@@ -76,4 +87,12 @@ public class ArrayOps {
     }
     return true;
   }
+
+  public static boolean isLocationMagic(int[][] matrix, int row, int col) {
+    int[] colSums = sumCols(matrix);
+    int[] rowSums = sumRows(matrix);
+    return (colSums[col]==rowSums[row]);
+  }
+
+  // add helper fxn version for colmagic and rowmagic
 }
