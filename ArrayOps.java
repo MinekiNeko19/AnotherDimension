@@ -66,26 +66,28 @@ public class ArrayOps {
 
   public static boolean isRowMagic(int[][] matrix) {
     int[] rowSums = sumRows(matrix);
-    int check = rowSums[0];
-    for (int i = 1; i < rowSums.length; i++) {
-      if (check != rowSums[i]) {
-        return false;
-      }
-      check = rowSums[i];
-    }
-    return true;    
+    return check(rowSums);
+    // int check = rowSums[0];
+    // for (int i = 1; i < rowSums.length; i++) {
+    //   if (check != rowSums[i]) {
+    //     return false;
+    //   }
+    //   check = rowSums[i];
+    // }
+    // return true;    
   }
 
   public static boolean isColMagic(int[][] matrix) {
     int[] colSums = sumCols(matrix);
-    int check = colSums[0];
-    for (int i = 1; i < colSums.length; i++) {
-      if (check != colSums[i]) {
-        return false;
-      }
-      check = colSums[i];
-    }
-    return true;
+    return check(colSums);
+    // int check = colSums[0];
+    // for (int i = 1; i < colSums.length; i++) {
+    //   if (check != colSums[i]) {
+    //     return false;
+    //   }
+    //   check = colSums[i];
+    // }
+    // return true;
   }
 
   public static boolean isLocationMagic(int[][] matrix, int row, int col) {
